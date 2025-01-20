@@ -121,42 +121,278 @@
 
     </div>
 
-    <!-- login form modal starts -->
-    <div class="modal fade" id="login-form-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content ">
+   <!-- footer starts -->
+   <footer style="background-color: #252525; color: #fff">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <h5 class="fw-bold mb-4">GROWEZY INFOTECH LIMITED</h5>
+                <!-- <p style="font-weight: 200" class="text-primary">
+            GROWEZY INFOTECH LIMITED
+          </p> -->
+                <p><a href="mailto:INFO@PETPAIR.COM" class="text-decoration-none " style="color: #fff;"><i
+                            class="ph ph-suitcase me-2"></i>INFO@PETPAIR.COM</a> </p>
 
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="p-5">
-                                <h3 class="text-primary text-center fw-bold">
-                                    Log In
-                                </h3>
-                                <div>
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="floatingInput"
-                                            placeholder="name@example.com">
-                                        <label for="floatingInput">Email address</label>
-                                    </div>
-                                </div>
-                                <button style="width: 100%;" class="px-1 fs-6  btn btn-primary text-white">
-                                    Send OTP
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <img src="./images/login-form-image.png" alt="">
-                        </div>
+                <p><a href="" class="text-decoration-none " style="color: #fff;"><i
+                            class="ph ph-suitcase me-2"></i>HTTPS://PETPAIR.COM</a> </p>
+                <p><a href="tel:+91 99200 09908" class="text-decoration-none " style="color: #fff;"><i
+                            class="ph ph-suitcase me-2"></i>+91
+                        9022903165</a> </p>
+            </div>
+            <div class="col-lg-4" style="font-weight: 200">
+                <p style="font-weight: 700">Official Info</p>
+                <p style="border: 3px solid #F25025; width: 70px" class="rounded"></p>
+                <ul class="fa-ul">
+                    <li class="mb-3">
+                        <span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>110, 1st Floor, Neo
+                        Corporate Plaza,Ramchandra Lane Extn.,
+                        Malad (W), Mumbai – 400064, Maharashtra, India.
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <div class="row my-3 my-lg-0">
+                    <div class="col-6" style="font-weight: 200">
+                        <p style="font-weight: 700">Company</p>
+                        <p style="border: 3px solid #F25025; width: 70px" class="rounded"></p>
+                        <p><a href="index.html" class="text-decoration-none " style="color: #fff;">Home</a></p>
+                        <p><a href="about.html" class="text-decoration-none " style="color: #fff;">About</a></p>
+                        <p><a href="contact.html" class="text-decoration-none " style="color: #fff;">Contact</a></p>
+                        <p><a href="mission-vision.html" class="text-decoration-none " style="color: #fff;">Mission
+                                & Vision</a></p>
+                        <p><a href="services.html" class="text-decoration-none " style="color: #fff;">Our
+                                Services</a></p>
+
+                    </div>
+                    <div class="col-6" style="font-weight: 200">
+                        <p style="font-weight: 700">Important</p>
+                        <p style="border: 3px solid #F25025; width: 70px" class="rounded"></p>
+                        <p>Privacy Policy</p>
+                        <p>Terms & Condition</p>
+                        <p>Project Overview</p>
+                        <!-- <p>Result Finder</p>
+              <p>Explore Tools</p> -->
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
+</footer>
+<!-- footer ends -->
 
-    <!-- login form modal ends -->
+<!-- login form modal starts -->
+<div class="modal fade" id="login-form-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content " style="border-radius: 20px;">
+
+            <div class="modal-body ">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <div class="p-5">
+                            <h3 class="text-primary text-center fw-bold fs-1">
+                                Log In
+                            </h3>
+                            <p style="color: #636363;" class="text-center">"Welcome Back! Your Pets Await!"</p>
+                            <div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" style="border-radius: 10px;" class="form-control"
+                                        id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" style="border-radius: 10px;" class="form-control"
+                                        id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Password</label>
+                                    <span style="font-size: 12px; color: #FF8400;">Forgot Password?</span>
+                                </div>
+                            </div>
+                            <button data-bs-dismiss="modal" data-bs-target="#logged-form-modal"
+                                data-bs-toggle="modal" style="width: 100%;"
+                                class="px-1 fs-6  btn btn-primary text-white login-continue-btn">
+                                Continue
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <img src="./images/login-form-image.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- login form modal ends -->
+
+<!-- register modal starts -->
+<div class="modal fade" id="register-form-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content " style="border-radius: 20px;">
+
+            <div class="modal-body ">
+                <div class="row p-4 p-md-5">
+                    <div class="d-flex flex-column justify-content-center">
+                        <h3 class="text-primary text-center fw-bold fs-1">
+                            Register
+                        </h3>
+                        <p style="color: #636363;" class="text-center">"Welcome Back! Your Pets Await!"</p>
+
+                        <div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" style="border-radius: 10px;" class="form-control"
+                                            id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">First Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" style="border-radius: 10px;" class="form-control"
+                                            id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Last Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" style="border-radius: 10px;" class="form-control"
+                                            id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Email Id</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" style="border-radius: 10px;" class="form-control"
+                                            id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Phone No</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button data-bs-dismiss="modal" style="width: 100%;"
+                                        data-bs-target="#password-form-modal" data-bs-toggle="modal"
+                                        class="px-1 py-2 fs-6  btn btn-primary text-white">
+                                        Continue
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- register modal ends -->
+
+<!-- register password modal starts -->
+<div class="modal fade" id="password-form-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content " style="border-radius: 20px;">
+
+            <div class="modal-body ">
+                <div class="row p-4 p-md-5">
+                    <div class="d-flex flex-column justify-content-center">
+                        <h3 class="text-primary text-center fw-bold fs-1">
+                            Register
+                        </h3>
+                        <p style="color: #636363;" class="text-center">"Welcome Back! Your Pets Await!"</p>
+
+                        <div>
+                            <div class="row">
+                                <div class="col-12 ">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" style="border-radius: 10px;" class="form-control"
+                                            id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">New Password</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 ">
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                            placeholder="Password" style="border-radius: 10px;">
+                                        <label for="floatingPassword">Password</label>
+                                        <!-- Eye icon to toggle password visibility -->
+                                        <button type="button"
+                                            class="btn btn-link position-absolute top-50 end-0 translate-middle-y pe-2"
+                                            class="togglePassword">
+                                            <!-- <i class="ph ph-eye me-2" style="color: #686868;"></i> -->
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <button data-bs-dismiss="modal" data-bs-target="#complete-form-modal"
+                                        data-bs-toggle="modal" style="width: 100%;"
+                                        class="px-1 py-2 fs-6  btn btn-primary text-white">
+                                        Create Password
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- register modal ends -->
+
+<!-- logged password modal starts -->
+<div class="modal fade" id="logged-form-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content " style="border-radius: 20px;">
+
+            <div class="modal-body ">
+                <div class="row p-4 p-md-5">
+                    <div class="d-flex flex-column justify-content-center">
+                        <h3 class="text-primary text-center fw-bold fs-1">
+                            <img src="./images/okay.png" alt="">
+                        </h3>
+                        <h2 style="color: #FF8400;" class="text-center">Pawsome! </h2>
+                        <h3 style=" color: #636363;" class="text-center">You’ve Logged In Successfully!</h3>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- logged password modal ends -->
+
+<!-- logged password modal starts -->
+<div class="modal fade" id="complete-form-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content " style="border-radius: 20px;">
+
+            <div class="modal-body ">
+                <div class="row p-4 p-md-5">
+                    <div class="d-flex flex-column justify-content-center">
+                        <h3 class="text-primary text-center fw-bold fs-1">
+                            <img src="./images/okay.png" alt="">
+                        </h3>
+                        <h2 style="color: #FF8400;" class="text-center">Pawsome! </h2>
+                        <h3 style=" color: #636363;" class="text-center">You’ve Registered Successfully!</h3>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- logged password modal ends -->
 
 
 
