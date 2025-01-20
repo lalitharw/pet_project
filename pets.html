@@ -14,7 +14,21 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .form-check-input:checked {
+            background-color: #FF8400;
+            border-color: #FF8400;
+            box-shadow: none;
+        }
+    </style>
 
     <title>Pet Project</title>
 </head>
@@ -55,71 +69,452 @@
     </nav>
 
     <div class="container py-5">
-        <!-- breadcrumb starts -->
-        <p class="fw-bold fs-3"><i class="fa-solid fa-arrow-left me-2"></i> Back Page</p>
-        <!-- breadcrumb ends -->
-
-        <div class="row ">
-
-            <!-- left card starts -->
-            <div class="col-12 col-md-8">
-                <div class="d-flex align-items-center justify-content-center flex-column flex-md-row shadow h-100"
-                    style="border-radius: 20px;">
-                    <div>
-                        <img src="./images/dog.png" width="auto" alt="">
+        <div class="row">
+            <!-- filter starts -->
+            <div class="col-12 col-md-3">
+                <div>
+                    <div class="p-3 mb-3" style="border: 1px solid #FF8400; border-radius: 10px;">
+                        <div class="row gy-3">
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #FF8400;" class="fw-bold">Breed</span>
+                                <span style="color: #FF8400;" class="fw-bold">Clear Filter</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Labrador</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Golden Retriever</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Beagle</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Bulldog</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+                        </div>
 
                     </div>
-                    <div class="p-5">
-                        <p style="color: #FF8400;" class="fw-bold fs-1">Type-Dog</p>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <p class="fs-5 m-0">Breed - <span style="color: #636363;">Labrador</span></p>
+                    <div class=" p-3 mb-3" style="border: 1px solid #FF8400; border-radius: 10px;">
+                        <div class="row gy-3">
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #FF8400;" class="fw-bold">Gender</span>
+                                <span style="color: #FF8400;" class="fw-bold">Clear Filter</span>
                             </div>
-                            <div class="col-12 col-md-6">
-                                <p class="fs-5 m-0">Food - <span style="color: #636363;">Milk , Dog Food , Fish</span>
-                                </p>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Male</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
                             </div>
-                            <div class="col-12 col-md-6">
-                                <p class="fs-5 m-0">Environment - <span style="color: #636363;">Cold</span></p>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Female</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
                             </div>
-                            <div class="col-12 col-md-6">
-                                <p class="fs-5 m-0">Age - <span style="color: #636363;">2 Years</span></p>
+
+
+                        </div>
+
+                    </div>
+                    <div class=" p-3 mb-3" style="border: 1px solid #FF8400; border-radius: 10px;">
+                        <div class="row gy-3">
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #FF8400;" class="fw-bold">Age</span>
+                                <span style="color: #FF8400;" class="fw-bold">Clear Filter</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Puppy</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Adult</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Senior</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class=" p-3 mb-3" style="border: 1px solid #FF8400; border-radius: 10px;">
+                        <div class="row gy-3">
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #FF8400;" class="fw-bold">Size</span>
+                                <span style="color: #FF8400;" class="fw-bold">Clear Filter</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Small</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Medium</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Large</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Extra Large</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class=" p-3 mb-3" style="border: 1px solid #FF8400; border-radius: 10px;">
+                        <div class="row gy-3">
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #FF8400;" class="fw-bold">Coat Type</span>
+                                <span style="color: #FF8400;" class="fw-bold">Clear Filter</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Short</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Medium</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Long</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Curly</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span style="color: #636363;">Hypoallergenic</span>
+                                <span style="color: #636363;"><input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- filter ends -->
+
+            <!-- pets starts -->
+            <div class="col-12 col-md-9">
+                <div class="row gy-5">
+                    <div class="col-12">
+                        <div class="shadow position-relative" style="border-radius: 20px;">
+                            <div class="position-absolute" style="right: 30px; top: 30px">
+                                <i class="ph ph-heart fs-2"></i>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <img src="./images/dog.png" alt="">
+                                <div class="px-md-5 p-4">
+                                    <p style="color: #FF8400;" class="fw-bold fs-1">Type-Dog</p>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Breed - <span style="color: #636363;">Labrador</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Food - <span style="color: #636363;">Milk , Dog Food ,
+                                                    Fish</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Environment - <span style="color: #636363;">Cold</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Age - <span style="color: #636363;">2 Years</span></p>
+                                        </div>
+
+                                        <div
+                                            class="d-flex flex-column flex-md-row gap-2 justify-content-md-between mt-3">
+                                            <div>
+                                                <span class="fw-bold fs-3">Price - 7999/- </span>
+                                            </div>
+                                            <div class="d-flex  gap-2">
+                                                <button class="btn d-flex align-items-center"
+                                                    style="background-color: #252525; color: #fff; "><i
+                                                        class="ph ph-shopping-cart me-2"></i> Add
+                                                    to Cart</button>
+                                                <button class="btn d-flex align-items-center"
+                                                    style="background-color: #FF8400; color: #fff;"><i
+                                                        class="ph ph-lightning me-2"></i>Buy
+                                                    Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="shadow position-relative" style="border-radius: 20px;">
+                            <div class="position-absolute" style="right: 30px; top: 30px">
+                                <i class="ph ph-heart fs-2"></i>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <img src="./images/dog.png" alt="">
+                                <div class="px-md-5 p-4">
+                                    <p style="color: #FF8400;" class="fw-bold fs-1">Type-Dog</p>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Breed - <span style="color: #636363;">Labrador</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Food - <span style="color: #636363;">Milk , Dog Food ,
+                                                    Fish</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Environment - <span style="color: #636363;">Cold</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Age - <span style="color: #636363;">2 Years</span></p>
+                                        </div>
+
+                                        <div
+                                            class="d-flex flex-column flex-md-row gap-2 justify-content-md-between mt-3">
+                                            <div>
+                                                <span class="fw-bold fs-3">Price - 7999/- </span>
+                                            </div>
+                                            <div class="d-flex  gap-2">
+                                                <button class="btn d-flex align-items-center"
+                                                    style="background-color: #252525; color: #fff; "><i
+                                                        class="ph ph-shopping-cart me-2"></i> Add
+                                                    to Cart</button>
+                                                <button class="btn d-flex align-items-center"
+                                                    style="background-color: #FF8400; color: #fff;"><i
+                                                        class="ph ph-lightning me-2"></i>Buy
+                                                    Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="shadow position-relative" style="border-radius: 20px;">
+                            <div class="position-absolute" style="right: 30px; top: 30px">
+                                <i class="ph ph-heart fs-2"></i>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <img src="./images/dog.png" alt="">
+                                <div class="px-md-5 p-4">
+                                    <p style="color: #FF8400;" class="fw-bold fs-1">Type-Dog</p>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Breed - <span style="color: #636363;">Labrador</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Food - <span style="color: #636363;">Milk , Dog Food ,
+                                                    Fish</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Environment - <span style="color: #636363;">Cold</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Age - <span style="color: #636363;">2 Years</span></p>
+                                        </div>
+
+                                        <div
+                                            class="d-flex flex-column flex-md-row gap-2 justify-content-md-between mt-3">
+                                            <div>
+                                                <span class="fw-bold fs-3">Price - 7999/- </span>
+                                            </div>
+                                            <div class="d-flex  gap-2">
+                                                <button class="btn d-flex align-items-center"
+                                                    style="background-color: #252525; color: #fff; "><i
+                                                        class="ph ph-shopping-cart me-2"></i> Add
+                                                    to Cart</button>
+                                                <button class="btn d-flex align-items-center"
+                                                    style="background-color: #FF8400; color: #fff;"><i
+                                                        class="ph ph-lightning me-2"></i>Buy
+                                                    Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="shadow position-relative" style="border-radius: 20px;">
+                            <div class="position-absolute" style="right: 30px; top: 30px">
+                                <i class="ph ph-heart fs-2"></i>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <img src="./images/dog.png" alt="">
+                                <div class="px-md-5 p-4">
+                                    <p style="color: #FF8400;" class="fw-bold fs-1">Type-Dog</p>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Breed - <span style="color: #636363;">Labrador</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Food - <span style="color: #636363;">Milk , Dog Food ,
+                                                    Fish</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Environment - <span style="color: #636363;">Cold</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Age - <span style="color: #636363;">2 Years</span></p>
+                                        </div>
+
+                                        <div
+                                            class="d-flex flex-column flex-md-row gap-2 justify-content-md-between mt-3">
+                                            <div>
+                                                <span class="fw-bold fs-3">Price - 7999/- </span>
+                                            </div>
+                                            <div class="d-flex  gap-2">
+                                                <button class="btn d-flex align-items-center"
+                                                    style="background-color: #252525; color: #fff; "><i
+                                                        class="ph ph-shopping-cart me-2"></i> Add
+                                                    to Cart</button>
+                                                <button class="btn d-flex align-items-center"
+                                                    style="background-color: #FF8400; color: #fff;"><i
+                                                        class="ph ph-lightning me-2"></i>Buy
+                                                    Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="shadow position-relative" style="border-radius: 20px;">
+                            <div class="position-absolute" style="right: 30px; top: 30px">
+                                <i class="ph ph-heart fs-2"></i>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <img src="./images/dog.png" alt="">
+                                <div class="px-md-5 p-4">
+                                    <p style="color: #FF8400;" class="fw-bold fs-1">Type-Dog</p>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Breed - <span style="color: #636363;">Labrador</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Food - <span style="color: #636363;">Milk , Dog Food ,
+                                                    Fish</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Environment - <span style="color: #636363;">Cold</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Age - <span style="color: #636363;">2 Years</span></p>
+                                        </div>
+
+                                        <div
+                                            class="d-flex flex-column flex-md-row gap-2 justify-content-md-between mt-3">
+                                            <div>
+                                                <span class="fw-bold fs-3">Price - 7999/- </span>
+                                            </div>
+                                            <div class="d-flex  gap-2">
+                                                <button class="btn d-flex align-items-center"
+                                                    style="background-color: #252525; color: #fff; "><i
+                                                        class="ph ph-shopping-cart me-2"></i> Add
+                                                    to Cart</button>
+                                                <button class="btn d-flex align-items-center"
+                                                    style="background-color: #FF8400; color: #fff;"><i
+                                                        class="ph ph-lightning me-2"></i>Buy
+                                                    Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="shadow position-relative" style="border-radius: 20px;">
+                            <div class="position-absolute" style="right: 30px; top: 30px">
+                                <i class="ph ph-heart fs-2"></i>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <img src="./images/dog.png" alt="">
+                                <div class="px-md-5 p-4">
+                                    <p style="color: #FF8400;" class="fw-bold fs-1">Type-Dog</p>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Breed - <span style="color: #636363;">Labrador</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Food - <span style="color: #636363;">Milk , Dog Food ,
+                                                    Fish</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Environment - <span style="color: #636363;">Cold</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="fs-5 m-0">Age - <span style="color: #636363;">2 Years</span></p>
+                                        </div>
+
+                                        <div
+                                            class="d-flex flex-column flex-md-row gap-2 justify-content-md-between mt-3">
+                                            <div>
+                                                <span class="fw-bold fs-3">Price - 7999/- </span>
+                                            </div>
+                                            <div class="d-flex  gap-2">
+                                                <button class="btn d-flex align-items-center"
+                                                    style="background-color: #252525; color: #fff; "><i
+                                                        class="ph ph-shopping-cart me-2"></i> Add
+                                                    to Cart</button>
+                                                <button class="btn d-flex align-items-center"
+                                                    style="background-color: #FF8400; color: #fff;"><i
+                                                        class="ph ph-lightning me-2"></i>Buy
+                                                    Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- left card ends -->
-
-            <!-- right card starts -->
-            <div class="col-12 col-md-4">
-                <div class="shadow p-3 h-100" style="border-radius: 20px;">
-                    <p class="fw-bold fs-3 m-0">Price Details</p>
-                    <hr>
-                    <div class="row gy-2">
-                        <div class="d-flex justify-content-between">
-                            <span>Price (1 item) </span>
-                            <span>7999/- </span>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <span>Discount</span>
-                            <span>499/- </span>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <span>Delivery Charges</span>
-                            <span>200/- </span>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <span>Total Amount</span>
-                            <span>7700/- </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- right card ends -->
+            <!-- pets ends -->
         </div>
-
     </div>
+
+
 
     <!-- login form modal starts -->
     <div class="modal fade" id="login-form-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
