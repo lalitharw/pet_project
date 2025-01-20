@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+body{
+    /* background: url(./images/background-image.png); */
+    font-family: "Source Sans 3", serif;
+}
+
+.text-primary{
+    color: #FF8400 !important;
+}
+
+.nav-link.active{
+    color: #FF8400 !important;
+    font-weight: 500;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 3.5rem;
+        padding-left: 3.5rem;
+    }
+}
+
+.nav-link{
+    color: black !important;
+    font-weight: 500;
+}
+
+.btn-primary{
+    background-color: #FF8400;
+    color: black;
+    border-color: transparent;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+.btn-primary:focus{
+    background-color: #dd790e;
+    color: black;
+    box-shadow: none;
+}
+
+.btn-primary:hover{
+    background-color: #dd790e;
+    color: black;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+
+.modal-body {
+   
+    padding: 0px  !important;
+}

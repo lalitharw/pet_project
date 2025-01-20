@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pet Project</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="./images/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+
+                </ul>
+                <!-- <form class="d-flex"> -->
+                <button class="btn btn-primary" data-bs-target="#login-form-modal" data-bs-toggle="modal"
+                    type="submit">Log In</button>
+                <!-- </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <!-- breadcrumb starts -->
+        <p class="fw-bold fs-3"><i class="fa-solid fa-arrow-left me-2"></i> Back Page</p>
+        <!-- breadcrumb ends -->
+
+        <div class="row ">
+
+            <!-- left card starts -->
+            <div class="col-12 col-md-8">
+                <div class="d-flex align-items-center justify-content-center flex-column flex-md-row shadow h-100"
+                    style="border-radius: 20px;">
+                    <div>
+                        <img src="./images/dog.png" width="auto" alt="">
+
+                    </div>
+                    <div class="p-5">
+                        <p style="color: #FF8400;" class="fw-bold fs-1">Type-Dog</p>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <p class="fs-5 m-0">Breed - <span style="color: #636363;">Labrador</span></p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="fs-5 m-0">Food - <span style="color: #636363;">Milk , Dog Food , Fish</span>
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="fs-5 m-0">Environment - <span style="color: #636363;">Cold</span></p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="fs-5 m-0">Age - <span style="color: #636363;">2 Years</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- left card ends -->
+
+            <!-- right card starts -->
+            <div class="col-12 col-md-4">
+                <div class="shadow p-3 h-100" style="border-radius: 20px;">
+                    <p class="fw-bold fs-3 m-0">Price Details</p>
+                    <hr>
+                    <div class="row gy-2">
+                        <div class="d-flex justify-content-between">
+                            <span>Price (1 item) </span>
+                            <span>7999/- </span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Discount</span>
+                            <span>499/- </span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Delivery Charges</span>
+                            <span>200/- </span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Total Amount</span>
+                            <span>7700/- </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- right card ends -->
+        </div>
+
+    </div>
+
+    <!-- login form modal starts -->
+    <div class="modal fade" id="login-form-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content ">
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="p-5">
+                                <h3 class="text-primary text-center fw-bold">
+                                    Log In
+                                </h3>
+                                <div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput">Email address</label>
+                                    </div>
+                                </div>
+                                <button style="width: 100%;" class="px-1 fs-6  btn btn-primary text-white">
+                                    Send OTP
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="./images/login-form-image.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- login form modal ends -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
